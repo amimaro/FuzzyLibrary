@@ -1,1 +1,1 @@
-# FuzzyLibrary
+# Fuzzy Library for Arduino
