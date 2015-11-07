@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Embedded Fuzzy Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+Fuzzy	KEYWORD1
+FuzzyLibrary	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+createVariable	KEYWORD2
+addTermTo	KEYWORD2
+addPointsTo	KEYWORD2
+createRule	KEYWORD2
+setVariableValue	KEYWORD2
+getVariableValue	KEYWORD2
+calculate	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+TRI	LITERAL1
+REC	LITERAL1
+TRA	LITERAL1
+GAU	LITERAL1
