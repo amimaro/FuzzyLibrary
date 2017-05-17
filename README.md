@@ -25,21 +25,21 @@ Fuzzy fz;
 ```
  
  
-* uint8_t createVariable(uint8_t INPUT/OUPUT)
+* uint8_t **createVariable**(uint8_t INPUT/OUPUT)
 
 
 Creates a variable that can be set as INPUT or OUTPUT. Example: speed, temperature...
 
 
 
-* uint8_t addTerm(uint8_t variable);
+* uint8_t **addTerm**(uint8_t variable);
 
 
 Adds terms to the variable by setting these variable as parameter. Example: for speed, fast, slow; for temperature, hot, cold...
 
 
 
-* void addPointsTo(uint8_t term, float p1, float p2, float p3, float p4);	
+* void **addPointsTo**(uint8_t term, float p1, float p2, float p3, float p4);	
 
 
 Adds four points to the term. The points are set based on the X axis, **p1** and **p4** they are pulled to 0 at the Y axis and **p2** and **p3** are pulled to 1 at the Y axis.
@@ -48,28 +48,28 @@ Example: 0, 1, 1, 2 makes a triangle starting at 0 at X and Y axis, the 1's make
 
 
 
-* uint8_t createRule(uint8_t input_variable, uint8_t input_term, uint8_t output_variable, uint8_t output_term);
+* uint8_t **createRule**(uint8_t input_variable, uint8_t input_term, uint8_t output_variable, uint8_t output_term);
 
 
 Creates the rule of inference for the fuzzy logic. This function works like this: "if *input variable* is *input_term* then *output_variable* is *output_term*".
 
 
 
-* uint8_t setVariableValue(uint8_t, float);	
+* uint8_t **setVariableValue**(uint8_t, float);	
 
 
 Sets a value to the term of the variable. This value is set based on the X axis.
 
 
 
-* float getVariableValue(uint8_t);	
+* float **getVariableValue**(uint8_t);	
 
 
 Returns the value of the term of the variable.
 
 
 
-* float calculate();	
+* float **calculate**();	
 
 
 Calculate the defuzzified value of the OUTPUT variable based on the rules of inference and the setted values.
