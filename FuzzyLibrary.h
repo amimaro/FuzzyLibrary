@@ -22,7 +22,7 @@ class Fuzzy  {
   public:
 	Fuzzy();    					
 	uint8_t createVariable(uint8_t);    	
-	uint8_t addTermTo(uint8_t);
+	uint8_t addTerm(uint8_t);
 	void addPointsTo(uint8_t, float, float, float, float);	
 	uint8_t createRule(uint8_t, uint8_t, uint8_t, uint8_t);
 	uint8_t setVariableValue(uint8_t, float);	

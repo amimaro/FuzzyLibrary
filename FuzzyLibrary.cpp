@@ -50,7 +50,7 @@ float Fuzzy::getVariableValue(uint8_t var){
 	return fuzzyVars[var][1];;
 }
 
-uint8_t Fuzzy::addTermTo(uint8_t fuzzyVar){
+uint8_t Fuzzy::addTerm(uint8_t fuzzyVar){
 	if(fuzzyVar >= 0 || fuzzyVar < fuzzyVarsCount){				
 		fuzzyTerms[fuzzyTermsCount] = new uint8_t [2];
 		fuzzyTerms[fuzzyTermsCount][0] = fuzzyVar;		
