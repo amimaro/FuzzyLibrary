@@ -18,16 +18,16 @@ uint8_t generous, average, cheap; //Tip Terms
 
 void setVariables(){
   service = fuzzy.createVariable(INPUT);
-  excellent = fuzzy.addTermTo(service, TRI);
-  good = fuzzy.addTermTo(service, TRI);
-  poor = fuzzy.addTermTo(service, TRI);
+  excellent = fuzzy.addTermTo(service);
+  good = fuzzy.addTermTo(service);
+  poor = fuzzy.addTermTo(service);
   food = fuzzy.createVariable(INPUT);
-  rancid = fuzzy.addTermTo(food, GAU);
-  delicious = fuzzy.addTermTo(food, GAU);
+  rancid = fuzzy.addTermTo(food);
+  delicious = fuzzy.addTermTo(food);
   tip = fuzzy.createVariable(OUTPUT);
-  generous = fuzzy.addTermTo(tip, REC);
-  average = fuzzy.addTermTo(tip, REC);
-  cheap = fuzzy.addTermTo(tip, REC);
+  generous = fuzzy.addTermTo(tip);
+  average = fuzzy.addTermTo(tip);
+  cheap = fuzzy.addTermTo(tip);
 }
 
 void setPoints(){
